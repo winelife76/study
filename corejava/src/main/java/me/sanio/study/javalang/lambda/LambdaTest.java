@@ -35,8 +35,6 @@ public class LambdaTest
         });
         t1.start();
 
-
-
         Timer t = new Timer(1000, event ->
                 System.out.println("The time is :" + new Date()+"(lambda)"));
         t.start();
