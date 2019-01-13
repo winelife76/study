@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="corejava" target="1.5" />
+      <module name="corejava" target="8" />
       <module name="eurekaserver" target="1.8" />
     </bytecodeTargetLevel>
   </component>
