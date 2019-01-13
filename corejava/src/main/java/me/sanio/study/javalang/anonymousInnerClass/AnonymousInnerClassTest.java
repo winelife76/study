@@ -41,12 +41,15 @@ class TalkingClock {
             }
         };
         Timer t = new Timer(interval, listener);
-        //t.start();
+        t.start();
 
-        Timer t1 = new Timer(interval, event -> {
+    }
+
+    public void start2(int interval,boolean beep){
+        Timer t = new Timer(interval, event -> {
             System.out.println("At the tone, the time is " + new Date());
             if (beep) Toolkit.getDefaultToolkit().beep();
         });
-        t1.start();
+        t.start();
     }
 }
