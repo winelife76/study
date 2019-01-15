@@ -1,7 +1,5 @@
 package me.sanio.study.javalang.classandobject;
 
-import java.time.*;
-
 /**
  * This program tests the Employee class.
  *
