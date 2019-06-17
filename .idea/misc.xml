@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/corejava/pom.xml" />
         <option value="$PROJECT_DIR$/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootdemo/pom.xml" />
       </list>
     </option>
   </component>
