@@ -33,14 +33,15 @@ public class LambdaTest
                 System.out.println("The time is :" + new Date());
             }
         });
-        t1.start();
+        //t1.start();
 
         Timer t = new Timer(1000, event ->
                 System.out.println("The time is :" + new Date()+"(lambda)"));
         t.start();
-
         // keep program running until user selects "Ok"
-        JOptionPane.showMessageDialog(null, "Quit program?");
-        System.exit(0);
+        //JOptionPane.showMessageDialog(null, "Quit program?");
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter any character");
+        in.next();
     }
 }
