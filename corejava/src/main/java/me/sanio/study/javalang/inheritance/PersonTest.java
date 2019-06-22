@@ -19,7 +19,7 @@ public class PersonTest {
 
         // print out names and descriptions of all Person objects
         for (Person p : people)
-            System.out.println(p.getName() + ", " + p.getDescription() + ",HC:" + p.hashCode());
+            System.out.println(p.getName() + ", " + p.getDescription() + ",HC:" + p.hashCode() + " | " + p.toString());
 
         System.out.println(people[2].equals(people[3]));
         System.out.println(pp.equals(people[3]));
