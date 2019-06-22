@@ -1,9 +1,10 @@
 package me.sanio.study.javalang.classandobject;
 
+import me.sanio.study.javalang.inheritance.Person;
+
 import java.time.LocalDate;
 
-public class Employee {
-    private String name;
+public class Employee extends Person {
     private double salary;
     private LocalDate hireDay;
 
@@ -12,13 +13,9 @@ public class Employee {
     }
 
     public Employee(String n, double s, int year, int month, int day) {
-        name = n;
+        super(n);
         salary = s;
         hireDay = LocalDate.of(year, month, day);
-    }
-
-    public String getName() {
-        return name;
     }
 
     public double getSalary() {
@@ -36,5 +33,9 @@ public class Employee {
 
     public Employee getBuddy(){
         return null;
+    }
+
+    public String getDescription(){
+        return String.format("an employee with a salary of $%.2f", salary);
     }
 }
